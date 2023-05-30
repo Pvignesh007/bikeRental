@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>  <title>LOGin page </title>
+<link rel="stylesheet" href="login.css">
+<script src="login.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+   <header id="main-header" data-height-onload="80">
+      <nav>
+         <div class="logo" >
+         <i class="fa fa-motorcycle" style="font-size:48px;color:red"></i>
+         <strong class="bikebig">Bikes Rental</strong>
+         </div>
+         <div class="menu">
+         <a href="index.html">Home</a>
+         <a href="#">About</a>
+         <a href="#">Bikes</a>
+         <a href="#">Gallery</a>
+         <a href="#">Our Works</a>
+         <a href="form.html">Register</a>
+         <a href="login.html">Login</a>
+         </div>
+         </nav>
+   </div>
+</header>
+   <!-- <div class="home">
+      <ul>
+      <li class="icon"><a href="index.html"><i class="fa-solid fa-file-signature"></i> Home</a> </li>
+      </ul>
+   </div> -->
+<div class="container">
+    <h2> LOGIN </h2>
+
+<form method="post" action="http://localhost:80/login" onsubmit="return validate()">
+
+<div class="username">
+   <input type="text" id="username" name="username" required> <span>  </span> <label for="Username"> Username </label>
+</div>
+
+<div class="password">
+   <input type="password" id="password"name="password"> <span> </span> <label for="password"> Password </label>
+    </div>
+
+<div class="forget">
+   <a href="#" target="_blank" > Forget password?</a>
+</div>
+
+<div class="login">
+   <input type="submit" value="Login" >
+</div>
+
+<div class="sign">
+Not a member?<a href="form.html" target="_blank" onclick="validate()"> Sign up</a>
+</div>
+<!-- <div class="regis">
+   <a href="form.html" target="_blank" onclick="validate()> Register</a>
+</div> -->
+
+</form>
+
+</div>
+</body>
+</html>
